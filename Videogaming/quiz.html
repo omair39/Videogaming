@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Game | Industry</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Game Warrior Template">
+	<meta name="keywords" content="warrior, game, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="js/style.css"/>
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+<style>
+
+    footer
+{
+background-color:black;
+color:white;
+margin-top:30px;
+
+}
+
+h5
+{
+margin-top:50px;
+
+}
+ul li
+{
+list-style-type:none;
+}
+ul li a
+{
+text-decoration:none;
+color:white;
+font-size:14px;
+
+} 
+p
+{
+color:black;
+}
+
+
+
+
+
+
+
+
+
+#quiz {
+  margin: -44px 50px 0px;
+  position: relative;
+  width: calc(100% - 100px);
+}
+
+#quiz h1 {
+  color: #FAFAFA;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 44px;
+}
+
+#quiz button {
+  float: left;
+  margin: 8px 0px 0px 8px;
+  padding: 4px 8px;
+  background: #9ACFCC;
+  color: #00403C;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+#quiz button:hover {
+  background: #36a39c;
+  color: #FFF;
+}
+
+#quiz button:disabled {
+  opacity: 0.5;
+  background: #9ACFCC;
+  color: #00403C;
+  cursor: default;
+}
+
+#question {
+  padding: 20px;
+  background: #FAFAFA;
+  text-align: center;
+}
+
+#question h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#question input[type=radio] {
+  display: none;
+}
+
+#question label {
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  background: #FAE3BB;
+  color: #4C3000;
+  width: calc(50% - 8px);
+  min-width: 50px;
+  cursor: pointer;
+}
+
+#question label:hover {
+  background: #EBBB67;
+}
+
+#question input[type=radio]:checked + label {
+  background: #CB8306;
+  color: #FAFAFA;
+}
+
+#quiz-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  background: #FAFAFA;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+#quiz-results-message {
+  display: block;
+  color: #00403C;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-results-score {
+  display: block;
+  color: #31706c;
+  font-size: 20px;
+}
+
+#quiz-results-score b {
+  color: #00403C;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#quiz-retry-button {
+
+  float: left;
+  margin: 8px 0px 0px 8px;
+  padding: 4px 8px;
+  background: #9ACFCC;
+  color: #00403C;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  
+}
+</style>
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<!-- logo -->
+			<a class="site-logo" href="home.html">
+				<img src="img/logo.png">
+			</a>
+			
+			<!-- responsive -->
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+			<!-- site menu -->
+			<nav class="main-menu">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="categories.html">Category</a></li>
+					<li><a href="quiz.html">Quiz & Polls</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="page-info-section set-bg" data-setbg="img/5.jpg">
+		<div class="pi-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-5 col-lg-6 text-white">
+						<h2>Quiz and Pools</h2>
+						<p>Use a element to process the input. You can learn more about this in our PHP tutorial. Then add inputs (with a matching label) for each field:</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+	<!-- Latest news section -->
+	
+	<!-- Latest news section end -->
+
+
+	<!-- Feature section -->
+	
+	<br><br>
+	<br>
+	<br>
+      <div id="quiz">
+  <h1 id="quiz-name"></h1>
+  <button id="submit-button">Submit Answers</button>
+  <button id="next-question-button">Next Question</button>
+  <button id="prev-question-button">Previous</button>
+  
+  <div id="quiz-results">
+    
+    <p id="quiz-results-message"></p>
+    <p id="quiz-results-score"></p>
+    <button id="quiz-retry-button">Retry</button>
+    
+  </div>
+</div>
+<br>
+<br>
+	<!-- Feature section end -->
+
+
+	<!-- Recent game section  -->
+<br>
+<br>
+<div class="container">
+<div class="row">
+  <div class="col-lg-12">
+  <h4><center>Online Games Quiz and Pools</center></h4><br>
+  <p class="text-justify">
+  Billiards is not a new style of game. People have played it for decades and it’s a popular activity at bars and pubs. However, digital pool has only been around for a couple of decades or so. The genre has evolved quite a bit from its days as a Flash game on Candystand. There are a bunch of digital pool games now and mobile versions aren’t so bad. You can even play various types of pool, including 8-ball, Snooker, Carrom, Crokinole, and a bunch of others. Here are the best pool games and billiards games for Android!
+  
+  
+  </p>
+  <p class="text-justify">
+  <h5>Only A Real Gamer Can Name These Awesome Video Games
+</h5><br>
+  While older games like Space Travel claim to be the world's first video game, only one can be considered the world's first "popular video game" and that is Pong. Which really was just a simple table tennis game. Kids these days could never sit and play Pong for as long as 70s kids did. But that's because times are changing and so are video games. That's why today's quiz will be on modern video games that anyone who is anyone will recognize. Or at least anyone who is anyone in the gaming community.
+<br>
+But before we start, let's talk about popularity. While Pong was the first popular game, only one can be the most popular. And that game is Tetris, with over 170 million downloads/purchases, the game has broken records that can hard ever be broken again. And has also inspired thousands of other games in the process. The closest in line is one game that is still 30 million away from breaking it. And that's with numbers rising on them both every year. Hopefully, one day a game will be released that surpasses Tetris, but until then we're met with amazing games with merely tens of millions of downloads or purchases.
+  <br>
+  
+  What we're going to do is give you a screenshot and a short description and you'll tell us what video game comes to mind. Don't worry, there's no time limit so take it easy and enjoy! Bet you can name at least half of them if you just put your mind to it!
+  <br>
+  <h5>Where is Roadhog from?
+</h5><br>
+  See that character way over there? His name is Roadhog and he's a fan favorite in this First Person Shooter game. His chain hook pulls enemies close so he can shred them with his scrap gun. It was almost consistently Game of the Year in 2016, including at Game Informer and The Game Awards. Everyone agreed it was the best game of 2016, with very little to no contest. Which game features this character Roadhog along with Tracer, Mercy, and Sombra?
+  
+  <br>
+  <h5>What game allows you to break the laws as Trevor or Michael?</h5><br>
+  This game is full of drugs, murder, alcohol, and just about every other illegal thing you can imagine. Despite all of the controversy and bans in foreign countries, it was also Edge's Game of the Year in 2013. It is in the top five best-selling games of all time and has the most insane mods that are known to man. But even more importantly, the coveted The Game Awards Game of the Year in 2013. But what game could gain such a following?
+  
+  <br>
+  <h5>Where is this Hunter from?</h5><br>
+  This massively multiplayer online first person shooter game is quickly becoming legendary. The characters in this game are known as Guardians and their job is to fight off Ghaul and the Red Cabal army as he attempts to steal the light of the mysterious Traveller. But basically, most people just want to get stronger by leveling up and collecting cool items. What game refers to you as a Guardian and allows you to choose between awesome classes with unique abilities?
+  
+  <br>
+  <h5>Where can you meet the Ryder siblings?</h5><br>
+  The year is 2819, and Alec Ryder has just taken a 634-year journey aboard the Ark Hyperion. Little does he know disaster will soon strike as a hostile alien race tries to take over. The game was critically acclaimed and criticized for a variety of reasons. From being able to choose your own orientation to messed up animations, the game is forever the topic of discussion. Which game allows you to travel to a far away galaxy and become the Pathfinder?
+  
+  <br>
+  <h5>Where can you find the Terror-Billy?</h5><br>
+  When German dissidents save you from extinction, you fall into a coma. When you awake, Nazis threaten all that you love, including your unborn children. You'd do anything to save them, even force yourself to get captured. Only you have the guts, guns, and gumption to return stateside, kill every Nazi in sight, and spark the second American Revolution. Which game is set in 1961 and includes a German woman's vendetta against you? After all, you did kill her lover.
+
+
+<br>
+<h5>Which game has reverted back to the Dark Ages?</h5><br>
+After nearly countless installments, this franchise has brought us one of the best games in history. Rated the Best Game of the Year in 2017, not one game could have surpassed it. The open world game allows you to travel the land that once included near modern-day technology. But thanks to an evil force it has reverted to medieval times once again. Just in time for you to miss it. Which game does a certain amnesic boy destined to save princesses star in?
+<br>
+<h5>Where can you roam Summoner's Rift?</h5><br>
+Over the last few years, MOBAS (or Multiplayer Online Battle Arena games) have become increasingly popular. They allow you to battle other teams (usually of five) as you destroy the other team's crystal (or similar object). But what intrigues most people is the large character pool that gives you a chance to connect with a character who fits your play style in the game. With over 360 million viewers in 2017, which of these games is the most popular eSports game to date?
+<br>
+<h5>Which steam game has you listening to Jazz?</h5><br>
+What could be considered a novelty game gained over a million players in the short time that it has been out. The game makes you feel like you're in an old cartoon as you take part in the classic run and gun action game. The story and graphics were inspired by 1930s cartoons and epic boss battles in other games. Complete with watercolor backgrounds and original jazz recordings, what game is liken to living in an episode of Looney Tunes?
+<br>
+  </p>
+  
+  
+  
+  </div>
+
+</div>
+</div>
+	
+	<!-- Review section end -->
+
+
+	<!-- Footer top section -->
+	
+	<!-- Footer top section end -->
+
+	
+	<!-- Footer section -->
+<footer >
+<div class="container">
+   <div class="row"  style="border-bottom:1px solid white;">
+       <div class="col-lg-6">
+	   <h5 style="color:white">About</h5><br>
+	   <p class="text-justify" style="color:white;">
+	   Video game revenue in 2018 reached a new peak of $43.8 billion, up 18 percent from the previous years, surpassing 
+	   the projected total global box office for the film industry, according to new data released by the Entertainment 
+	   Software Association and The NPD Group. Gaming is on the verge of becoming the biggest entertainment sector in the world.
+	   Gaming, according to IDG's research, already brings in more revenue globally than the music business.
+	   
+	   
+	   </p>
+	   </div>
+	   <div class="col-lg-3">
+	   <h5 style="color:white">Category</h5>
+	     <ul>
+		       <li><a href="#">Action Games</a></li>
+			   <li><a href="#">Sport Games</a></li>
+			   <li><a href="#">Battle Royale Games</a></li>
+			  <li><a href="#">Action-adventure Games</a></li>
+			   <li><a href="#">Role-playing Games</a></li>
+			   <li><a href="#">Racing Games</a></li>
+	    </ul>
+	   </div>
+	   <div class="col-lg-3">
+	    <h5  style="color:white">Quick Links</h5>
+	     <ul>
+		       <li><a href="http://gematsu.com/">Gematsu</a></li>
+			   <li><a href="http://www.destructoid.com/">Destructoid</a></li>
+			   <li><a href="http://www.pcgamer.com/">PC Gamer</a></li>
+			   <li><a href="http://www.gamefaqs.com/">GameFAQs</a></li>
+			   <li><a href="http://www.gamespot.com/">GameSpot </a></li>
+			   <li><a href="http://www.gameinformer.com/">Game Informer </a></li>
+	    </ul>
+	   </div>
+
+</div>
+<br>
+<div class="row">
+
+    <p class="text-justify" style="margin-left:35%;color:white;">
+	
+	Copyright © 2020 All Rights Reserved by Game Warrior.
+	
+	</p>
+</div>
+</div>
+</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.marquee.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	// Array of all the questions and choices to populate the questions. This might be saved in some JSON file or a database and we would have to read the data in.
+var all_questions = [{
+  question_string: "What color is the sky?",
+  choices: {
+    correct: "Blue",
+    wrong: ["Pink", "Orange", "Green"]
+  }
+}, {
+  question_string: "Which of the following elements aren’t introduced in HTML5?",
+  choices: {
+    correct: "<input>",
+    wrong: ["<article>", "<footer>", "<hgroup>"]
+  }
+}, {
+  question_string: "How many wheels are there on a tricycle?",
+  choices: {
+    correct: "Three",
+    wrong: ["One", "Two", "Four"]
+  }
+}, {
+  question_string: 'Who is the main character of Harry Potter?',
+  choices: {
+    correct: "Harry Potter",
+    wrong: ["Hermione Granger", "Ron Weasley", "Voldemort"]
+  }
+}];
+
+// An object for a Quiz, which will contain Question objects.
+var Quiz = function(quiz_name) {
+  // Private fields for an instance of a Quiz object.
+  this.quiz_name = quiz_name;
+  
+  // This one will contain an array of Question objects in the order that the questions will be presented.
+  this.questions = [];
+}
+
+// A function that you can enact on an instance of a quiz object. This function is called add_question() and takes in a Question object which it will add to the questions field.
+Quiz.prototype.add_question = function(question) {
+  // Randomly choose where to add question
+  var index_to_add_question = Math.floor(Math.random() * this.questions.length);
+  this.questions.splice(index_to_add_question, 0, question);
+}
+
+// A function that you can enact on an instance of a quiz object. This function is called render() and takes in a variable called the container, which is the <div> that I will render the quiz in.
+Quiz.prototype.render = function(container) {
+  // For when we're out of scope
+  var self = this;
+  
+  // Hide the quiz results modal
+  $('#quiz-results').hide();
+  
+  // Write the name of the quiz
+  $('#quiz-name').text(this.quiz_name);
+  
+  // Create a container for questions
+  var question_container = $('<div>').attr('id', 'question').insertAfter('#quiz-name');
+  
+  // Helper function for changing the question and updating the buttons
+  function change_question() {
+    self.questions[current_question_index].render(question_container);
+    $('#prev-question-button').prop('disabled', current_question_index === 0);
+    $('#next-question-button').prop('disabled', current_question_index === self.questions.length - 1);
+   
+    
+    // Determine if all questions have been answered
+    var all_questions_answered = true;
+    for (var i = 0; i < self.questions.length; i++) {
+      if (self.questions[i].user_choice_index === null) {
+        all_questions_answered = false;
+        break;
+      }
+    }
+    $('#submit-button').prop('disabled', !all_questions_answered);
+  }
+  
+  // Render the first question
+  var current_question_index = 0;
+  change_question();
+  
+  // Add listener for the previous question button
+  $('#prev-question-button').click(function() {
+    if (current_question_index > 0) {
+      current_question_index--;
+      change_question();
+    }
+  });
+  
+  // Add listener for the next question button
+  $('#next-question-button').click(function() {
+    if (current_question_index < self.questions.length - 1) {
+      current_question_index++;
+      change_question();
+    }
+  });
+ 
+  // Add listener for the submit answers button
+  $('#submit-button').click(function() {
+    // Determine how many questions the user got right
+    var score = 0;
+    for (var i = 0; i < self.questions.length; i++) {
+      if (self.questions[i].user_choice_index === self.questions[i].correct_choice_index) {
+        score++;
+      }
+      
+   $('#quiz-retry-button').click(function(reset) {
+      quiz.render(quiz_container);
+   });
+    
+    }
+    
+   
+    
+    // Display the score with the appropriate message
+    var percentage = score / self.questions.length;
+    console.log(percentage);
+    var message;
+    if (percentage === 1) {
+      message = 'Great job!'
+    } else if (percentage >= .75) {
+      message = 'You did alright.'
+    } else if (percentage >= .5) {
+      message = 'Better luck next time.'
+    } else {
+      message = 'Maybe you should try a little harder.'
+    }
+    $('#quiz-results-message').text(message);
+    $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
+    $('#quiz-results').slideDown();
+    $('#submit-button').slideUp();
+    $('#next-question-button').slideUp();
+    $('#prev-question-button').slideUp();
+    $('#quiz-retry-button').sideDown();
+    
+  });
+  
+  // Add a listener on the questions container to listen for user select changes. This is for determining whether we can submit answers or not.
+  question_container.bind('user-select-change', function() {
+    var all_questions_answered = true;
+    for (var i = 0; i < self.questions.length; i++) {
+      if (self.questions[i].user_choice_index === null) {
+        all_questions_answered = false;
+        break;
+      }
+    }
+    $('#submit-button').prop('disabled', !all_questions_answered);
+  });
+}
+
+// An object for a Question, which contains the question, the correct choice, and wrong choices. This block is the constructor.
+var Question = function(question_string, correct_choice, wrong_choices) {
+  // Private fields for an instance of a Question object.
+  this.question_string = question_string;
+  this.choices = [];
+  this.user_choice_index = null; // Index of the user's choice selection
+  
+  // Random assign the correct choice an index
+  this.correct_choice_index = Math.floor(Math.random(0, wrong_choices.length + 1));
+  
+  // Fill in this.choices with the choices
+  var number_of_choices = wrong_choices.length + 1;
+  for (var i = 0; i < number_of_choices; i++) {
+    if (i === this.correct_choice_index) {
+      this.choices[i] = correct_choice;
+    } else {
+      // Randomly pick a wrong choice to put in this index
+      var wrong_choice_index = Math.floor(Math.random(0, wrong_choices.length));
+      this.choices[i] = wrong_choices[wrong_choice_index];
+      
+      // Remove the wrong choice from the wrong choice array so that we don't pick it again
+      wrong_choices.splice(wrong_choice_index, 1);
+    }
+  }
+}
+
+// A function that you can enact on an instance of a question object. This function is called render() and takes in a variable called the container, which is the <div> that I will render the question in. This question will "return" with the score when the question has been answered.
+Question.prototype.render = function(container) {
+  // For when we're out of scope
+  var self = this;
+  
+  // Fill out the question label
+  var question_string_h2;
+  if (container.children('h2').length === 0) {
+    question_string_h2 = $('<h2>').appendTo(container);
+  } else {
+    question_string_h2 = container.children('h2').first();
+  }
+  question_string_h2.text(this.question_string);
+  
+  // Clear any radio buttons and create new ones
+  if (container.children('input[type=radio]').length > 0) {
+    container.children('input[type=radio]').each(function() {
+      var radio_button_id = $(this).attr('id');
+      $(this).remove();
+      container.children('label[for=' + radio_button_id + ']').remove();
+    });
+  }
+  for (var i = 0; i < this.choices.length; i++) {
+    // Create the radio button
+    var choice_radio_button = $('<input>')
+      .attr('id', 'choices-' + i)
+      .attr('type', 'radio')
+      .attr('name', 'choices')
+      .attr('value', 'choices-' + i)
+      .attr('checked', i === this.user_choice_index)
+      .appendTo(container);
+    
+    // Create the label
+    var choice_label = $('<label>')
+      .text(this.choices[i])
+      .attr('for', 'choices-' + i)
+      .appendTo(container);
+  }
+  
+  // Add a listener for the radio button to change which one the user has clicked on
+  $('input[name=choices]').change(function(index) {
+    var selected_radio_button_value = $('input[name=choices]:checked').val();
+    
+    // Change the user choice index
+    self.user_choice_index = parseInt(selected_radio_button_value.substr(selected_radio_button_value.length - 1, 1));
+    
+    // Trigger a user-select-change
+    container.trigger('user-select-change');
+  });
+}
+
+// "Main method" which will create all the objects and render the Quiz.
+$(document).ready(function() {
+  // Create an instance of the Quiz object
+  var quiz = new Quiz('My Quiz');
+  
+  // Create Question objects from all_questions and add them to the Quiz object
+  for (var i = 0; i < all_questions.length; i++) {
+    // Create a new Question object
+    var question = new Question(all_questions[i].question_string, all_questions[i].choices.correct, all_questions[i].choices.wrong);
+    
+    // Add the question to the instance of the Quiz object that we created previously
+    quiz.add_question(question);
+  }
+  
+  // Render the quiz
+  var quiz_container = $('#quiz');
+  quiz.render(quiz_container);
+});
+	
+	
+	</script>
+    </body>
+</html>

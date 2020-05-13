@@ -1,0 +1,5 @@
+1. First of all extract the zip folder.
+2. Open the game website folder.
+3. Run Home.html page and scroll to bottom.
+4. Now visit all pages like about.html, categories.html, quiz.html, contact.html.
+5. Thanks visiting our projects.
